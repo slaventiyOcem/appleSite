@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+body{
+    width: 100%;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+header{
+    height: 39px;
+    background-color: #000;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px 0 250px;
+}
+.item{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.item:hover{
+    text-decoration: underline;
+    transition: 5s;
+}
+nav{
+    padding: 0 70px 0 70px;
+    height: 70px;
+    background-color: rgba(106,109,104,0.3);
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: -1px;
+    left: 0;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    filter: drop-shadow(4px 4px rgba(106,109,104,0.57) );
+}
+.nav_item{
+    color: #999;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav_item:hover{
+    color: white;
+    transition: .5s;
+
+}
+.drop_down_list{
+    position: relative;
+    display: inline-block;
+}
+.drop_button{
+    font-size: 18px;
+    color: white;
+    padding: 23px;
+    background-color: rgba(106,109,104,-0.7);
+    border: none;
+}
+.drop_down_points{
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 200px;
+}
+.drop_down_points>a{
+    color: #6a6d68;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop_down_points>a:hover{
+    color: white;
+    transition: 1s;
+    transition-duration: 2s;
+    transition-property: width ;
+}
+.drop_down_points>a>span{
+    margin-left: 5px;
+    color: #6f0100;
+}
+.drop_down_list:hover>.drop_down_points{
+    display: block;
+    transition-property: width ;
+}
+.drop_down_list:hover>.drop_button{
+    background-color: black;
+    transition-property: width ;
+}
+.border_right{
+    border-right: 1px solid white;
+}
+
+.elem {
+    border-right: 2px solid white;
+    transition-duration: 2s;
+    transition-property: width;
+    height: 520px;
+    width: 0;
+    margin-top: 110px;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.elem:hover {
+    width: 1920px;
+}
+.elem>div{
+    font-size: 25px;
+    color: white;
+}
+.elem>img{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    padding: 20px 250px 10px 250px;
+}
+.bookmarks_style{
+    color: rgb(238,239,228);
+    text-decoration: none;
+}
+.bookmarks_style:hover{
+    text-decoration: underline;
+}
+.wrapper_blocks{
+    margin: 20px 10px 0 20px;
+    display: none;
+}
+.wrapper_blocks:target{
+    display: block;
+}
+.block{
+    width: 240px;
+    height: 340px;
+    background-color:rgba(106,109,104,0.2);
+    margin-right: 25px;
+    align-items: center;
+    float: left;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.block:hover{
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+.block>img{
+    width: 100%;
+}
+.block>p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price>s{
+    padding: 15px 0 5px 20px;
+    color: #999999;
+    font-size: 20px;
+}
+.price>span{
+    padding: 15px 15px 5px 0;
+    font-size: 20px;
+    color: rgba(239,0,39,0.57);
+}
+.category_img{
+    margin-top: 50px;
+    width: 100%;
+
+
+
+}
